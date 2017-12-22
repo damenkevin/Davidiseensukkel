@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | MajorHolidays</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/lightbox.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="{% static 'engine0/style.css'%}" />
+	<script type="text/javascript" src="{% static 'engine0/jquery.js'%}"></script>
+	<!-- End WOWSlider.com HEAD section --></head><!--/head-->
+
+<body>
+	<header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                            <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="{% static 'images/logo.png' %}" alt="" /></h1>
+                    </a>
+
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="dropdown"><a href="#">Bestemmingen <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="#">Top 10 bestemmingen</a></li>
+                                <li><a href="#">Frankrijk</a></li>
+                                <li><a href="#">Spanje</a></li>
+                                <li><a href="#">Italië</a></li>
+                                <li><a href="#">Griekenland</a></li>
+                                <li><a href="#">Denemarken</a></li>
+                                <li><a href="#">Engeland</a></li>
+                                <li><a href="#">Verder Weg?</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#">Over ons <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="#">Het bedrijf</a></li>
+                                <li><a href="#">Medewerkers</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact </a></li>
+                        </ul>
+                </div>
+                <div class="search">
+                    <form role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+                            <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+    <section id="home-slider">
+        <div class="container">
+            <div class="row">
+                <div class="main-slider">
+                    <div class="slide-text">
+                        <h1>Behoefte aan een heerlijke vakantie?</h1>
+                        <p>Wij van MajorHolidays zijn er voor jou! Op deze website helpen we jou met het zoeken van de vakantie die bij jou past! Kies hieronder wat voor een vakantie je dit jaar zin in hebt!</p>
+
+                </div>
+                    <img src="{% static 'images/home/slider/hill.png' %}" class="slider-hill" alt="slider image">
+                    <img src="{% static 'images/home/slider/house.png' %}" class="slider-house" alt="slider image">
+                    <img src="{% static 'images/home/slider/sun.png' %}" class="slider-sun" alt="slider image">
+                    <img src="{% static 'images/home/slider/birds1.png' %}" class="slider-birds1" alt="slider image">
+                    <img src="{% static 'images/home/slider/birds2.png' %}" class="slider-birds2" alt="slider image">
+                </div>
+            </div>
+        </div>
+        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+    </section>
+    <!--/#home-slider-->
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <img src="{% static 'images/natuur.png' %}" width="90px" height="80px" alt="">
+                        </div>
+                        <h2>Natuur</h2>
+                        <p>Ben jij iemand die van een heerlijke boswandeling houd? Deze vakanties zullen je veel rust en ontspanning bieden.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <img src="{% static 'images/wintersport.png' %}" width="90px" height="80px" alt="">
+                        </div>
+                        <h2>Berg- en Wintersport</h2>
+                        <p>Ben jij iemand die het hogerop zoekt in de bergen, als je zin hebt in een actieve wintersport vakantie hebben we precies wat je zoekt!</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <img src="{% static 'images/zon.png' %}" width="80px" height="80px" alt="">
+                        </div>
+                        <h2>Zon en Strand</h2>
+                        <p>Na al dat harde werken ben je misschien wel toe aan lekker relaxen aan het stand! Ook dit is natuurlijk een optie waar we aan hebben gedacht!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#services-->
+
+
+
+    <section id="action" class="responsive">
+        <div class="vertical-center">
+             <div class="container">
+                <div class="row">
+                    <div class="action take-tour">
+                        <div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <h1 class="title">Haast met boeken?</h1>
+                            <p>Boek direct een vakantie met onze razendsnelle boekfunctie!</p>
+                        </div>
+                        <div class="col-sm-5 text-center wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <div class="tour-button">
+                                <a href="#" class="btn btn-common">SNEL BOEKEN</a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <br>
+    <!--/#action-->
+
+		            <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+
+                        <h1 class="title">Meest bekeken vakanties:</h1>
+
+						</div>
+
+
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="single-features">
+                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="{% static 'images/foto1.jpg' %}" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <h2>Vakantiehuis in zuid-Frankrijk</h2>
+                        <P>Ideaal voor een weekje rust, ook geschikt met de hele familie. Supermarkt op 300 meter afstand. 3 slaapkamers (6 personen totaal) </P>
+                    </div>
+                </div>
+                <div class="single-features">
+                    <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <h2>Luxe Skihut in Oostenrijk</h2>
+                        <P>Luxe Skihut voor 10 personen. Geweldige ski-ervaring en perfecte hut om met 2 of 3 gezinnen te genieten van een weekje wintersport </P>
+                    </div>
+                    <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="{% static 'images/foto2.jpg' %}" class="img-responsive" alt="">
+                    </div>
+                </div>
+                <div class="single-features">
+                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="{% static 'images/foto3.png' %}" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <h2>Zonnig strandhuisje in Spanje</h2>
+                        <P>Strandhuis aan de Costa del Sol in Spanje. Geschikt voor 4-6 personen. In de zomer is het hier gemiddeld 26&#8451;. Met twee slaapkamers en een geweldig uitzicht zul je snel moeten kijken of we nog beschikbaar zijn in de zomerweken! </P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--/#features-->
+
+    <section id="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+
+                        <h1 class="title">Evenementen</h1>
+                        <p>We hebben voor jou wat evenementen uitgekozen die je misschien leuk vind: </p>
+	<!-- Start WOWSlider.com BODY section -->
+	<div id="wowslider-container0">
+	<div class="ws_images"><ul>
+		<li><img src="{% static 'data0/images/british.jpg' %}" alt="British Museum Engeland" title="British Museum Engeland" id="wows0_0"/></li>
+		<li><img src="{% static 'data0/images/raften.jpg' %}" alt="Raften Frankrijk" title="Raften Frankrijk" id="wows0_1"/></li>
+		<li><img src="{% static 'data0/images/rome.jpg' %}" alt="Trevi Fontijn Italië" title="Trevi Fontijn Italië" id="wows0_2"/></li>
+		<li><a href="http://wowslider.net"><img src="{% static 'data0/images/snowboarden.jpg' %}"alt="slideshow javascript" title="Snowboarden Oostenrijk" id="wows0_3"/></a></li>
+		<li><img src="{% static 'data0/images/stockholm.jpg' %}" alt="Gröna Lund Zweden" title="Gröna Lund Zweden" id="wows0_4"/></li>
+	</ul></div>
+	<div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">css image slider</a> by WOWSlider.com v8.8</div>
+	<div class="ws_shadow"></div>
+	</div>
+
+
+
+    <script src="{% static 'engine0/wowslider.js'%}"></script>
+    <script src="{% static 'engine0/script.js'%}"></script>
+
+
+	<!-- End WOWSlider.com BODY section -->
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+     </section>
+    <!--/#clients-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center bottom-separator">
+                      <img src="{% static 'images/home/under.png' %}" class="img-responsive inline" alt="">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="testimonial bottom">
+                        <h2>Recensies</h2>
+                        <div class="media">
+                            <div class="pull-left">
+                                <a href="#"><img height="80px" width="80px" src="{% static 'images/persoon.png' %}" alt=""></a>
+                            </div>
+                            <div class="media-body">
+                                <blockquote>De allerbeste vakantie die ik ooit gehad heb! Ideaal met een grote familie.</blockquote>
+                                <h3><a href="#">- Jan Brood</a></h3>
+                            </div>
+                         </div>
+                        <div class="media">
+                            <div class="pull-left">
+                                <a href="#"><img height="80px" width="80px" src="{% static 'images/persoon.png' %}" alt=""></a>
+                            </div>
+                            <div class="media-body">
+                                <blockquote>Als je ooit nog op skivakantie wilt zou ik het absouluut met MajorHolidays doen!.</blockquote>
+                                <h3><a href="">- Henk de Vries</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="contact-info bottom">
+                        <h2>Contact</h2>
+                        <address>
+                        E-mail: <a href="mailto:someone@example.com">MajorHolidays@gmail.com</a> <br>
+                        Telefoon: +1 (123) 456 7890 <br>
+                        Fax: +1 (123) 456 7891 <br>
+                        </address>
+
+                        <h2>Adres</h2>
+                        <address>
+                        Gebouw 3A <br>
+                        BepaaldeStraat, <br>
+                        Eindhoven <br>
+                        Nederland <br>
+                        </address>
+                    </div>
+                </div>
+
+
+
+
+                 <sectio id="clients">
+
+
+                <div class="col-sm-12">
+                    <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+
+                        <h2>Reacties</h2>
+                        <p>Laat hier een reactie achter over uw ervaring met MajorHolidays</p><br>
+
+                    </div>
+  <div class="col-md-8">
+                {% for post in posts %}
+                    <div class="post">
+                        <div class="date">
+                            <h6><a href=""> {{ post.published_date }}</a></h6>
+                        </div>
+                        <h4><a href="">{{ post.title }}</a></h4>
+                        <p>{{ post.text|linebreaksbr }}<br><br><br></p>
+                    </div>
+                {% endfor %}
+                </div>
+
+                </div>
+
+
+     </section>
+
+
+
+
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="contact-form bottom">
+                        <h2>Stuur ons een bericht</h2>
+                        <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" required="required" placeholder="Naam">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" required="required" placeholder="Email Adres">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Schrijf je bericht hier"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="submit" class="btn btn-submit" value="Verstuur">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&copy; MajorHolidays2017. All Rights Reserved.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+
+
+    <script src="{% static 'js/jquery.js'%}"></script>
+    <script src="{% static 'js/bootsrap.min.js'%}"></script>
+    <script src="{% static 'js/lightbox.min.js'%}"></script>
+    <script src="{% static 'js/wow.min.js'%}"></script>
+    <script src="{% static 'js/main.js'%}"></script>
+
+</body>
+</html>
